@@ -14,9 +14,11 @@ Produce a concise, source-linked creative intelligence brief for AI ecommerce vi
 1. Clarify scope only when the user omits a critical constraint such as market, date range, or output channel. Otherwise assume Douyin China, the last 24 hours for daily briefs, and Chinese output.
 2. Search fresh sources first. Prefer direct Douyin pages, creator pages, platform hot lists, ecommerce creator communities, brand accounts, social search results, and reputable reposts that expose a usable video link.
 3. Group candidates by product category. Use the taxonomy in `references/categories.md`; add a temporary category only when at least two useful examples do not fit.
-4. Keep only entries with a working URL or a clearly attributable source page. Do not invent links, metrics, creators, brands, or timestamps.
-5. Score each candidate with `references/scoring.md`. Prioritize examples that reveal a reusable creative pattern, not only high engagement.
-6. Write the brief using `references/output-template.md`. Include category sections, video links, observed creative pattern, why it is useful for AI ecommerce generation, and a concrete remake angle.
+4. Check the workspace `reports/seen-links.tsv` if it exists. Avoid repeating prior links unless the same example has new verified metrics or a materially new production insight.
+5. Keep only entries with a working URL or a clearly attributable source page. Do not invent links, metrics, creators, brands, or timestamps.
+6. Score each candidate with `references/scoring.md`. Prioritize examples that reveal a reusable creative pattern, not only high engagement.
+7. Write the brief using `references/output-template.md`. Include category sections, video links, observed creative pattern, why it is useful for AI ecommerce generation, and a concrete remake angle.
+8. After writing a report, update `reports/seen-links.tsv` with first-seen date, category, title, URL, source type, and pattern tags when the workspace is Git-backed.
 
 ## Evidence Rules
 
@@ -36,6 +38,9 @@ Use multiple query patterns and rotate them to avoid a narrow feed:
 - `AI 生成 商品短视频 抖音 服饰`
 - `无人机 AI 电商短视频 抖音`
 - `食品 AI 带货 视频 抖音`
+- `AI 宠物食品 猫砂 智能喂食器 抖音 带货`
+- `AI 美妆 护肤 产品视频 抖音`
+- `AI 摄影器材 补光灯 相机 产品展示 抖音`
 
 When web search is weak, broaden to creator/tool ecosystems and mark the source type:
 
